@@ -1,16 +1,19 @@
 @font-face {
     font-family: Roboto-Regular;
-    src: url('./Roboto/Roboto-Regular.ttf');;
+    src: url('./Roboto/Roboto-Regular.ttf');
+    ;
 }
 
 @font-face {
     font-family: Roboto-Lightitalic;
-    src: url('./Roboto/Roboto-LightItalic.ttf');;
+    src: url('./Roboto/Roboto-LightItalic.ttf');
+    ;
 }
 
 @font-face {
     font-family: Roboto-Black;
-    src: url('./Roboto/Roboto-Black.ttf');;
+    src: url('./Roboto/Roboto-Black.ttf');
+    ;
 }
 
 * {
@@ -27,17 +30,18 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    min-height: 100vh;
 }
 
-/* Header */
+/* Header & Footer */
 
 .header,
- .footer {
+.footer {
     background-color: #1F2937;
     color: #f9faf8;
     display: flex;
     justify-content: space-between;
-    padding: 16px 120px;
+    padding: 64px 120px;
 }
 
 .header ul {
@@ -48,14 +52,18 @@ body {
     gap: 24px;
 }
 
+.footer {
+    justify-content: centers;
+}
+
 
 /* Content */
 
 .content {
     display: flex;
+    flex-direction: column;
     flex: 1;
 }
-
 
 a {
     text-decoration: none;
@@ -71,14 +79,27 @@ a {
     font-size: 18px;
 }
 
+
+/* Section 1 */
+
 .section1 {
     background-color: #1F2937;
+    display: flex;
+    padding: 32px 120px;
+    gap: 52px;
+    max-height: 300px;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
 }
 
 .section1 .title {
     color: #f9faf8;
     font-size: 48px;
     font-family: Roboto-Black;
+    margin: 0;
 }
 
 .section1 .text {
@@ -89,15 +110,39 @@ a {
 .section1 .button {
     background-color: #3882f6;
     color: #f9faf8;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    height: 30px;
 }
 
 .section1 .image1 {
-    background-color: gray;
-    color: #f9faf8;
+    width: 800px;
+    height: 250px;
+
 }
+
+/* Section 2 */
 
 .section2 {
     background-color: #f9faf8;
+    text-align: center;
+    padding: 32px 120px;
+}
+
+.section2 .container1 {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    padding-top: 32px;
+    padding-bottom: 52px;
+
+}
+
+.section2 .item {
+    max-width: 200px;
+
+    
 }
 
 .section2 .title {
@@ -108,46 +153,85 @@ a {
 
 .section2 .text {
     color: #1F2937;
+    max-width: 150px;
 }
 
 .section2 .figure {
-    border: 3px solid #3882f6 ;
-    border-radius: 25px;
+    border: 3px solid #3882f6;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
 }
+
+
+
+/* Section 3 */
+
 
 .section3 {
     background-color: #e5e7eb;
     color: #1F2937;
+
+}
+
+.section3 .container3 {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 240px;
 }
 
 .section3 .text {
     font-size: 36px;
     font-style: italic;
     font-family: Roboto-Lightitalic;
+    margin: 0;
+
 }
 
 .section3 .quote {
     font-family: Roboto-Black;
     font-size: 24px;
+    margin: 0;
+    text-align: end;
 }
 
-.container2 {
+
+/* Section 4 */
+
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 120px;
+}
+
+
+.section4 .container {
     background-color: #3882f6;
     color: #f9faf8;
+    padding: 40px 100px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
 }
 
-.container2 .title {
+.section4 .container .title {
     font-size: 24px;
 }
 
-.container2 .text {
+.section4 .container .text {
     color: #e5e7eb;
     font-size: 18px;
 }
 
-.container2 .button {
-    border: 3px solid #f9faf8;
-    border-radius: 25px;
+
+.section4 .container .button {
+    border: 2px solid #f9faf8;
+    border-radius: 5px;
     background-color: #3882f6;
     color: #f9faf8;
+    width: 100px;
+    height: 40px;
 }
